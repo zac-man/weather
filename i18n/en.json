@@ -1,0 +1,34 @@
+{
+  "menu": {
+    "home": "Home",
+    "data": "Data",
+    "products": "Products",
+    "news": "News",
+    "about": "About Us",
+    "content": "Content Us",
+    "language":"English/中文"
+  },
+  "data":{
+    "map":"Map",
+    "data":"Data",
+    "download":"DownLoad",
+    "upload":"Upload"
+  },
+  "news":{
+    "header":"EVOGLE 1.0 APP issued !!!",
+    "downloadType":"Scan QR code to download:"
+  },
+  "about":{
+    "header":"About Us",
+    "article":"Located in beautiful Los Angeles, CA, USA, EVOGLE, LLC is a high-tech environmental company. The company focuses on innovative high-technologies development on environmental monitoring, environment protection, and environment improvement. The company invented iEQBox: intelligent Environmental Quality Box, which is a state-of-the-art and state-of-the-practice product for air qualify monitoring, air big data application, and intelligent decisions for environment protection and improvement. The iEQBox has been applied in LA, CA, USA and Beijing, China."
+  },
+  "content":{
+    "note1":"Contact",
+    "note2":"Contact us at Email: ",
+    "note3":"evogle.com@gmail.com"
+  },
+  "language":{
+    "cn":"中文",
+    "en":"English"
+  }
+}

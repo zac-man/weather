@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="weatherApp" ng-controller="translateCtrl">
+<head>
+    <meta charset="utf-8">
+    <title>EVOGLE Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet" type="text/css"/>
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+</head>
+<body data-spy="scroll" data-target=".bs-docs-sidebar" >
+<!-- Navbar
+    ================================================== -->
+<div class="nav-agency">
+    <div class="navbar navbar-static-top">
+        <!-- navbar-fixed-top -->
+        <div class="navbar-inner">
+            <div class="container"><a class="brand" href="/"> <img src="/images/logo/logo.png" alt="Logo"></a>
+                <div id="main-nav">
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li>
+                                <a href="/">{{'menu.home'|translate}}</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">{{'menu.data'|translate}}<b
+                                        class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="javascript:;">{{'data.map'|translate}}</a></li>
+                                    <li><a href="javascript:;">{{'data.data'|translate}}</a></li>
+                                    <li><a href="javascript:;">{{'data.download'|translate}}</a></li>
+                                    <li><a href="javascript:;">{{'data.upload'|translate}}</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="/products" class="dropdown-toggle" data-toggle="dropdown">{{'menu.products'|translate}}<b
+                                        class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/iEQBox">iEQBox</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="/news">{{'menu.news'|translate}}</a>
+                            </li>
+                            <li>
+                                <a href="/about">{{'menu.about'|translate}}</a>
+                            </li>
+                            <li>
+                                <a href="/content">{{'menu.content'|translate}}</a>
+                            </li>
+
+                            <li class="dropdown" ng-controller="languageController">
+                                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">{{'menu.language'|translate}}<b
+                                        class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="javascript:;" ng-click="languageChange('cn')">{{'language.cn'|translate}}</a>
+                                    </li>
+                                    <li><a href="javascript:;" ng-click="languageChange('en')">{{'language.en'|translate}}</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row-fluid">
+        <div class="span12">
+            <div class="page-header">
+                <div class="row-fluid">
+                    <div class="span12">
+                        <h1>{{'about.header'|translate}}</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row-fluid contact">
+        <div class="span12">
+            <h3 class="text-indent-2em">
+                {{'about.article'|translate}}
+            </h3>
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer
+    ================================================== -->
+<!-- Le javascript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/angular/angular.min.js" type="text/javascript"></script>
+<script src="js/angular-translate/angular-translate.min.js" type="text/javascript"></script>
+<script src="js/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"
+        type="text/javascript"></script>
+<script src="js/i18n.filters.js" type="text/javascript"></script>
+<script src="js/apps/languageChange.controller.js" type="text/javascript"></script>
+<script src="js/apps/translate.controler.js" type="text/javascript"></script>
+</body>
+</html>
